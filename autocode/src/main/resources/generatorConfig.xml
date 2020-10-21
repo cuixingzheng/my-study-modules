@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!-- <classPathEntry location="mysql-connector-java-6.0.2.jar" />  -->
+    <context id="context1" targetRuntime="MyBatis3">
+    <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin>  
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin> 
+         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
+        <commentGenerator> 
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 --> 
+            <property name="suppressAllComments" value="true" /> 
+        </commentGenerator> 
+        
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/data_statistics"
+                        userId="root" password="123456" />
+        <javaModelGenerator targetPackage="com.study.autocode.po" targetProject="src/main/java" >
+              <property name="trimStrings" value="true" />
+              <property name="useActualColumnNames" value="false" />
+			  <property name="javaFileEncoding" value="UTF-8"/>
+			  <!-- 格式化java代码 -->
+				<!-- <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+				 <property name="rootClass" value="com.casfive.pentode.framework.dto.BaseDto"/>-->
+        </javaModelGenerator>
+                            
+        <sqlMapGenerator targetPackage="mapping"
+                         targetProject="src/main/resources" />
+                         
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.study.autocode.dao"
+                          targetProject="src/main/java">
+        </javaClientGenerator>
+
+        <table tableName="user_order"
+               mapperName="UserOrderDao"
+               domainObjectName="UserOrder"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
+        </table>
+    </context>
+</generatorConfiguration>

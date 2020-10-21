@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud2020-payment-remote" />
+        <module name="springcloud2020-order" />
+        <module name="springcloud-provider-remote" />
+        <module name="springcloud2020-eureka" />
+        <module name="springcloud-eureka" />
+        <module name="springcloud2020-hystrix-dashboart" />
+        <module name="gof" />
+        <module name="springcloud2020-stream-provider" />
+        <module name="autocode" />
+        <module name="springcloud" />
+        <module name="springcloud2020-stream-consumer" />
+        <module name="springcloud2020-order-feign" />
+        <module name="java-study" />
+        <module name="springcloud-consumer" />
+        <module name="springcloud2020-config-client" />
+        <module name="springcloudalibaba2020-nacos-payment" />
+        <module name="springcloudalibaba2020-nacos-order" />
+        <module name="kafka-study" />
+        <module name="springcloud-eureka002" />
+        <module name="springcloud-provider" />
+        <module name="springcloud2020-gateway" />
+        <module name="springcloud2020-config-client002" />
+        <module name="springcloud2020-payment-fh-remote" />
+        <module name="springcloud-provicer" />
+        <module name="springcloud2020-stream-consumer002" />
+        <module name="springcloud2020-config-server" />
+        <module name="springcloud2020-order-feign-hystrix" />
+        <module name="springcloud2020-payment" />
+        <module name="springcloud2020-eureka002" />
+        <module name="springcloud2020-payment002" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="autocode" options="-parameters" />
+      <module name="gof" options="-parameters" />
+      <module name="kafka-study" options="-parameters" />
+      <module name="springcloud-consumer" options="" />
+      <module name="springcloud-eureka" options="" />
+      <module name="springcloud-eureka002" options="" />
+      <module name="springcloud-provider" options="" />
+      <module name="springcloud-provider-remote" options="" />
+      <module name="springcloud2020-config-client" options="" />
+      <module name="springcloud2020-config-client002" options="" />
+      <module name="springcloud2020-config-server" options="" />
+      <module name="springcloud2020-eureka" options="" />
+      <module name="springcloud2020-eureka002" options="" />
+      <module name="springcloud2020-gateway" options="" />
+      <module name="springcloud2020-hystrix-dashboart" options="" />
+      <module name="springcloud2020-order" options="" />
+      <module name="springcloud2020-order-feign-hystrix" options="" />
+      <module name="springcloud2020-payment" options="" />
+      <module name="springcloud2020-payment-fh-remote" options="" />
+      <module name="springcloud2020-payment-remote" options="" />
+      <module name="springcloud2020-stream-consumer" options="" />
+      <module name="springcloud2020-stream-consumer002" options="" />
+      <module name="springcloud2020-stream-provider" options="" />
+      <module name="springcloudalibaba2020-nacos-order" options="" />
+      <module name="springcloudalibaba2020-nacos-payment" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/autocode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gof/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-study/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-study/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-study/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-study/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud/springcloud-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud/springcloud-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud/springcloud-eureka002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud/springcloud-provider-remote/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud/springcloud-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-config-client002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-eureka002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-hystrix-dashboart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-order-feign-hystrix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-payment-fh-remote/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-payment-remote/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-stream-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-stream-consumer002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloud2020-stream-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloudalibaba2020-nacos-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud2020/springcloudalibaba2020-nacos-payment/src/main/java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

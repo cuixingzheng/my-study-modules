@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.springcloud2020</groupId>
+    <artifactId>springcloud2020</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>springcloud2020</name>
+    <description>Demo project for Spring Boot</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>springcloud2020-parent</module>
+        <module>springcloud2020-payment</module>
+        <module>springcloud2020-payment002</module>
+        <module>springcloud2020-payment-remote</module>
+        <module>springcloud2020-payment-fh-remote</module>
+        <module>springcloud2020-eureka</module>
+        <module>springcloud2020-eureka002</module>
+        <module>springcloud2020-order</module>
+        <module>springcloud2020-order-feign</module>
+        <module>springcloud2020-order-feign-hystrix</module>
+        <module>springcloud2020-hystrix-dashboart</module>
+        <module>springcloud2020-gateway</module>
+        <module>springcloud2020-config-server</module>
+        <module>springcloud2020-config-client</module>
+        <module>springcloud2020-config-client002</module>
+        <module>springcloud2020-stream-provider</module>
+        <module>springcloud2020-stream-consumer</module>
+        <module>springcloud2020-stream-consumer002</module>
+        <module>springcloudalibaba2020-nacos-payment</module>
+        <module>springcloudalibaba2020-nacos-order</module>
+    </modules>
+</project>
