@@ -30,5 +30,6 @@
         <module>springcloud2020-stream-consumer002</module>
         <module>springcloudalibaba2020-nacos-payment</module>
         <module>springcloudalibaba2020-nacos-order</module>
+        <module>springcloudalibaba2020-nacos-config-client</module>
     </modules>
 </project>

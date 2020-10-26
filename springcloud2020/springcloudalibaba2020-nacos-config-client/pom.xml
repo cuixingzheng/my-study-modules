@@ -8,10 +8,10 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.springcloudalibaba2020.nacos.payment</groupId>
-    <artifactId>springcloudalibaba2020-nacos-payment</artifactId>
+    <groupId>com.springcloudalibaba2020.nacos.config.client</groupId>
+    <artifactId>springcloudalibaba2020-nacos-config-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloudalibaba2020-nacos-payment</name>
+    <name>springcloudalibaba2020-nacos-config-client</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -23,6 +23,9 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
     </dependencies>
-
 </project>
