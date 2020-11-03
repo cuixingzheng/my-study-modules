@@ -31,5 +31,12 @@
         <module>springcloudalibaba2020-nacos-payment</module>
         <module>springcloudalibaba2020-nacos-order</module>
         <module>springcloudalibaba2020-nacos-config-client</module>
+        <module>springcloudalibaba2020-sentinel-service</module>
+        <module>springcloudalibaba2020-provider-payment</module>
+        <module>springcloudalibaba2020-consumer-order</module>
+        <module>springcloudalibaba2020-provider-payment-remote</module>
+        <module>springcloudalibaba2020-seata-order</module>
+        <module>springcloudalibaba2020-seata-account</module>
+        <module>springcloudalibaba2020-seata-storage</module>
     </modules>
 </project>

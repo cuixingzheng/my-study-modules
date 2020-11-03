@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springcloudalibaba2020.seata.order.dao.OrderDao">
+    <resultMap type="com.springcloudalibaba2020.seata.order.po.OrderPo" id="BaseResultMap">
+        <result property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="commodityCode" column="commodity_code"/>
+        <result property="count" column="count"/>
+        <result property="money" column="money"/>
+        <result property="status" column="status"/>
+    </resultMap>
+
+
+    <insert id="createOrder" parameterType="com.springcloudalibaba2020.seata.order.po.OrderPo" useGeneratedKeys="true" keyProperty="id">
+        insert  into  order_tbl(user_id,commodity_code,count,money,status) values (#{userId},#{commodityCode},#{count},#{money},#{status})
+    </insert>
+
+    <update id="updateOrder">
+        update order_tbl set status = 1 where id = #{id}
+    </update>
+
+</mapper>

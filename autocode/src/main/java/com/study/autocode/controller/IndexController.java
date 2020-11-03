@@ -27,11 +27,11 @@ public class IndexController {
 
 
 
-    @RequestMapping(value = "index",method = RequestMethod.POST)
+    @RequestMapping(value = "index",method = RequestMethod.GET)
     @ResponseBody
     public String index(){
-//        List<User> users = iUserService.selectUsers();
-//        System.out.println(JSON.toJSONString(users));
+        List<User> users = iUserService.selectUsers();
+        System.out.println(JSON.toJSONString(users));
 
         return "index";
     }

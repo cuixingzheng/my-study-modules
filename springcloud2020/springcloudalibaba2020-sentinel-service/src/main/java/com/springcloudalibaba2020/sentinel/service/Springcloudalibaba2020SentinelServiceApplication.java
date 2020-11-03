@@ -1,0 +1,13 @@
+package com.springcloudalibaba2020.sentinel.service;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Springcloudalibaba2020SentinelServiceApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Springcloudalibaba2020SentinelServiceApplication.class, args);
+    }
+
+}
