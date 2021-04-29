@@ -12,9 +12,13 @@ public class MapUtil {
     public static void main(String[] args) {
         Map<String,Object> map = new HashMap<>();
         map.put("key",001);
-        map.put("key002",002);
+        System.out.println(map.put("key002", 002));
         System.out.println();
+        map.get("key");
         //map.hashCode()
 
+
+        int a  = 6;
+        System.out.println((a=3) == 3);
     }
 }

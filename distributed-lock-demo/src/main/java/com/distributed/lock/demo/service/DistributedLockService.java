@@ -31,20 +31,24 @@ public class DistributedLockService {
 
     public static String lock = "lock";
 
+    public static ExecutorService pool = Executors.newFixedThreadPool(50);
+
     public void distributedLockMethod(){
 //        System.out.println(redisTemplate.hashCode());
 //        Boolean status = redisTemplate.opsForValue().setIfAbsent("key", "dd");
 //        System.out.println(status);
-        ExecutorService pool = Executors.newFixedThreadPool(1);
-//        while (count >0){
-//            //pool.submit(this::creatOrder);
-//            //pool.submit(this::creatOrder002);
-//            //pool.submit(this::creatOrder003);
-//            //pool.submit(this::creatOrder004);
-//            //pool.submit(this::creatOrder005);
-//            pool.submit(this::creatOrder006);
-//        }
-        creatOrder006();
+
+        Redisson redisson = RedissonManager.getRedisson();
+        //while (count >0){
+            //pool.submit(this::creatOrder);
+            //pool.submit(this::creatOrder002);
+            //pool.submit(this::creatOrder003);
+            //pool.submit(this::creatOrder004);
+            //pool.submit(this::creatOrder005);
+            pool.submit(()->this.creatOrder006(redisson));
+        //}
+
+        //creatOrder006();
 
     }
 
@@ -108,10 +112,13 @@ public class DistributedLockService {
         }
     }
 
-    public void creatOrder006() {
-        Redisson redisson = RedissonManager.getRedisson();
+    public void creatOrder006(Redisson redisson) {
         RLock lock = redisson.getLock("lock");
-        lock.lock(10, TimeUnit.SECONDS);
+        //默认设置过期时间30，同时启动看门狗，对当前线程进行监控，
+        // 查看是否执行完毕，如果为执行完毕则会继续对该lock续命30s，止到执行完毕或报异常
+        lock.lock();
+        //默认设置过期时间30s， 但是不会续命，用此方法需要考虑业务最大执行时间，否则会出现锁提前释放
+        //lock.lock(30, TimeUnit.SECONDS);
         try {
             if (count > 0) {
                 System.out.println("正在秒杀商品，商品数量为 ： " + count);

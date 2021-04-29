@@ -18,11 +18,8 @@ public class RedissonManager {
     private static Redisson redisson = null;
     //实例化redisson
     static{
-
-        config.useSingleServer().setAddress("redis1.redis.test.duia.com:6379")
-                .setPassword("X4K2iGmTpZtL1vUE4MPDYqBXXos").setConnectionPoolSize(5);
-        //config.useSingleServer().set
-        //得到redisson对象
+        Config config = new Config();
+        config.useSingleServer().setAddress("redis://192.168.229.100:6379").setConnectionPoolSize(50);
         redisson = (Redisson) Redisson.create(config);
     }
 

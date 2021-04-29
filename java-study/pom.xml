@@ -8,8 +8,7 @@
   <artifactId>java-study</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-
-  <name>A Camel Route</name>
+  <name>java-study</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,12 +31,17 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
-
-
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
+
+    <!-- spring aop依赖 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
 
     <dependency>
       <groupId>mysql</groupId>
@@ -152,6 +156,21 @@
       <artifactId>spring-context-support</artifactId>
       <version>${spring.version}</version>
     </dependency>
+
+    <!-- tika 解析网页-->
+    <dependency>
+      <groupId>org.apache.tika</groupId>
+      <artifactId>tika-core</artifactId>
+      <version>1.25</version>
+    </dependency>
+
+    <!-- jsoup解析网页-->
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.12.2</version>
+    </dependency>
+
   </dependencies>
 
   <build>
