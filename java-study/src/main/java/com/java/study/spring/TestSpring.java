@@ -1,9 +1,7 @@
 package com.java.study.spring;
 
 import com.java.study.spring.config.AppConfig;
-import com.java.study.spring.service.IndexService;
-import com.java.study.spring.service.OrderService;
-import com.java.study.spring.service.UserService;
+import com.java.study.spring.service.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,11 +18,20 @@ public class TestSpring {
 
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        OrderService bean = ac.getBean(OrderService.class);
-        System.out.println(bean.getClass());
+        //OrderService bean = ac.getBean(OrderService.class);
+        //System.out.println(bean.getClass());
+        SaleService saleService = ac.getBean(SaleService.class);
+        ac.start();
 
-        ac.close();
+        saleService.sale();
+        MyFactoryBean myFactoryBean = ac.getBean(MyFactoryBean.class);
+        myFactoryBean.myFactoryBeanHandler();
 
+        MyFactoryBean myFactoryBean002 = (MyFactoryBean) ac.getBean("&myFactoryBean");
+        myFactoryBean002.myFactoryBeanHandler();
+
+        SaleService myFactoryBean003 = (SaleService) ac.getBean("myFactoryBean");
+        myFactoryBean003.sale();
 
 //        String[] beanDefinitionNames = ac.getBeanDefinitionNames();
 //        for (String name : beanDefinitionNames) {

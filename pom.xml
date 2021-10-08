@@ -15,6 +15,7 @@
         <module>kafka-study</module>
         <module>springcloud</module>
         <module>springcloud2020</module>
+        <module>servlet3.0</module>
 
     </modules>
 

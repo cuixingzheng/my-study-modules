@@ -37,6 +37,11 @@ public class ListTest {
 //        System.out.println(set03.size());
 
 
-        Collections.synchronizedSet(new HashSet<>());
+       // Collections.synchronizedSet(new HashSet<>());
+
+
+        Set<Person> set = new TreeSet<>();
+
+        set.add(new Person());
     }
 }

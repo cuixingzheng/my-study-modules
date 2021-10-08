@@ -1,6 +1,7 @@
 package com.java.study.spring.config;
 
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * @author: cxz
@@ -8,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @description:
  **/
 @ComponentScan("com.java.study.spring")
+@EnableTransactionManagement
 public class AppConfig {
 
 

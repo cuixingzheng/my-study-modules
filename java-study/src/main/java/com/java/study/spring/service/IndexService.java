@@ -1,5 +1,7 @@
 package com.java.study.spring.service;
 
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,6 +12,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class IndexService {
+
+    @EventListener(value = {ApplicationEvent.class})
+    private void listen(ApplicationEvent applicationEvent){
+        System.out.println("applicationEvent : " + applicationEvent.toString());
+    }
 
 //    private UserService userService;
 //
